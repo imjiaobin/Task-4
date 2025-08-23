@@ -1,0 +1,43 @@
+/* 元件 */
+.btn {
+  border-radius: 4px;
+  padding: 12px 24px;
+  font-family: "Noto Sans TC";
+  font-size: 16px;
+  line-height: 1.5;
+  font-weight: 500;
+  cursor: pointer;
+  border: none;
+  background-color: transparent;
+}
+
+.btn:disabled {
+  cursor: default;
+}
+
+.btn-dark {
+  background-color: var(--neutral-900);
+  color: var(--neutral-100);
+}
+
+.btn-light {
+  border: 1px solid var(--neutral-900);
+}
+
+.btn-primary {
+  background-color: var(--primary-300);
+}
+
+// @media (max-width: 576px) {
+//   .btn {
+//     padding: 8px 16px;
+//   }
+
+//   .index_nav_btn {
+//     background-color: var(--primary-100);
+//   }
+
+//   .index_nav_btn.active {
+//     background-color: var(--primary-200);
+//   }
+// }

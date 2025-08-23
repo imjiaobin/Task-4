@@ -1,0 +1,151 @@
+.index_header {
+  background-image: url("/assets//images/banner.png");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  padding: 289px 0;
+  padding-left: 200px;
+  // margin-bottom: 64px;
+}
+
+.index_btn {
+  // margin-top: 48px;
+  background-color: var(--primary-300);
+}
+
+.index_header-py {
+  padding-left: 0;
+  padding-right: 0;
+}
+
+.product {
+  position: relative;
+  .product-text {
+    position: absolute;
+    top: 0;
+    left: 0;
+    padding: 8px 12px;
+    background-color: var(--primary-100);
+    font-size: 14px;
+    color: var(--primary-400);
+  }
+}
+
+.banner {
+  text-align: center;
+  background-image: url(/assets/images/banner-co-branded.png);
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+  padding: 100px 0;
+  position: relative;
+
+  .star-image {
+    position: absolute;
+    width: 48px;
+    top: 68px;
+    left: calc(50% - 397px);
+  }
+
+  .sparkle-image {
+    position: absolute;
+    width: 76px;
+    bottom: 132px;
+    right: calc(50% - 357px);
+  }
+}
+
+.category {
+  position: relative;
+  .category-text {
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    background-color: rgba($color: black, $alpha: 0.4);
+    color: white;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+  }
+}
+
+.inspiration-row {
+  display: flex;
+  flex-wrap: wrap;
+  margin: -4px;
+}
+
+.inspiration-col-4 {
+  width: calc(100% / 12 * 4);
+  padding: 4px;
+}
+
+.inspiration-col-6 {
+  width: calc(100% / 12 * 6);
+  padding: 4px;
+}
+
+.inspiration-col-12 {
+  width: 100%;
+  padding: 4px;
+}
+
+@media (max-width: 1100px) {
+  .text-lg-lg {
+    font-size: 18px;
+    font-weight: 700;
+  }
+}
+@media (max-width: 767px) {
+  .index_header_md {
+    background-image: url("/assets//images/banner-sm.png");
+    padding: 155px 0;
+    padding-left: 24px;
+    margin-bottom: 40px;
+  }
+  .product-md-row {
+    margin-left: -8px;
+    margin-right: -8px;
+  }
+  .product-md-col {
+    min-width: 316px;
+    padding-left: 8px;
+    padding-right: 8px;
+  }
+
+  .banner {
+    padding: 64px 0;
+    background-image: url(/assets/images/banner-co-branded-sm.png);
+    overflow: hidden;
+    .star-image {
+      top: 32px;
+      left: -20px;
+    }
+    .sparkle-image {
+      bottom: 104px;
+      right: -28px;
+    }
+  }
+
+  .inspiration-row {
+    flex-wrap: nowrap;
+    margin: 0 -8px;
+    img {
+      min-width: 300px;
+    }
+
+    .inspiration-col-4,
+    .inspiration-col-6,
+    .inspiration-col-12 {
+      width: unset;
+      padding: 0 8px;
+    }
+  }
+
+  // .index_btn_md {
+  //   margin-top: 32px;
+  // }
+}
