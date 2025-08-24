@@ -26,7 +26,7 @@ export default defineConfig({
   // base 的寫法:
   // base: '/Repository 的名稱/'
   // base: '/web-layout-training-vite/',
-  base: "/web-layout-training-vite-HW4/",
+  base: "/Task-4/",
   plugins: [
     liveReload(["./layout/**/*.ejs", "./pages/**/*.ejs", "./pages/**/*.html"]),
     ViteEjsPlugin(),
